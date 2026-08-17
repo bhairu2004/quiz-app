@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+
+      <div class="brand">
+        <div class="brand-icon">?</div>
+
+        <div>
+          <h1>QuickQuiz</h1>
+          <p>Test your knowledge</p>
+        </div>
+      </div>
+
+      <div class="progress-text">
+        Question <span id="questionNumber">1</span>
+        /
+        <span id="totalQuestions">5</span>
+      </div>
+
+    </header>
+
+
+    <!-- Progress bar -->
+    <div class="progress-container">
+
+      <div
+        class="progress-bar"
+        id="progressBar">
+      </div>
+
+    </div>
+
+
+    <!-- Quiz -->
+    <main class="quiz-container" id="quizContainer">
+
+      <div class="quiz-card">
+
+        <div class="question-top">
+
+          <span class="question-label">
+            QUESTION
+          </span>
+
+          <span
+            class="score-display"
+            id="scoreDisplay">
+            Score: 0
+          </span>
+
+        </div>
+
+
+        <h2 id="question">
+          Question goes here
+        </h2>
+
+
+        <div
+          class="options"
+          id="options">
+        </div>
+
+
+        <div class="quiz-footer">
+
+          <p id="selectionMessage">
+            Select an answer to continue
+          </p>
+
+          <button
+            id="nextButton"
+            class="next-button"
+            disabled>
+            Next
+          </button>
+
+        </div>
+
+      </div>
+
+    </main>
+
+
+    <!-- Result -->
+    <main
+      class="result-container"
+      id="resultContainer"
+      style="display: none;">
+
+      <div class="result-card">
+
+        <div class="result-icon">
+          ✓
+        </div>
+
+        <p class="result-label">
+          QUIZ COMPLETED
+        </p>
+
+        <h2>
+          Great job!
+        </h2>
+
+        <p class="result-description">
+          Here is how you performed.
+        </p>
+
+
+        <div class="result-score">
+
+          <span id="finalScore">
+            0
+          </span>
+
+          <span class="score-total">
+            / 5
+          </span>
+
+        </div>
+
+
+        <p id="resultMessage">
+          Keep practicing!
+        </p>
+
+
+        <button
+          class="restart-button"
+          id="restartButton">
+          Try Again
+        </button>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
